@@ -1,0 +1,20 @@
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_req
+prompt             = no
+
+[req_distinguished_name]
+C  = IN
+ST = Telangana
+L  = Hyderabad
+O  = AKVIK labs
+CN = akviklabs.online
+
+[v3_req]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = akviklabs.online
+DNS.2 = www.akviklabs.online
+DNS.3 = api.akviklabs.online
+DNS.4 = app.akviklabs.online
